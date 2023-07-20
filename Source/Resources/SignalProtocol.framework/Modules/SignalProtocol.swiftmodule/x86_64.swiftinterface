@@ -1,0 +1,222 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 effective-4.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name SignalProtocol
+import Foundation
+@_exported import SignalProtocol
+import Swift
+import UIKit
+final public class GroupCipher {
+  public init(for remoteAddress: SignalProtocol.SignalSenderKeyName, in store: SignalProtocol.SignalStore)
+  final public func encrypt(_ message: Foundation.Data) throws -> SignalProtocol.CiphertextMessage
+  final public func decrypt(_ message: SignalProtocol.CiphertextMessage) throws -> Foundation.Data
+  final public func decrypt(_ message: Foundation.Data) throws -> Foundation.Data
+  @objc deinit
+}
+public enum SignalError : Swift.Int32, Swift.Error {
+  case noMemory
+  case invalidArgument
+  case unknownError
+  case duplicateMessage
+  case invalidKey
+  case invalidKeyId
+  case invalidMac
+  case invalidMessage
+  case invalidVersion
+  case legacyMessage
+  case noSession
+  case untrustedIdentity
+  case incalidVrfSignature
+  case invalidProtoBuf
+  case fpVersionMismatch
+  case fpIdentityMismatch
+  case noDelegate
+  case noData
+  case noSignalAddress
+  case notSuccessful
+  case isTrustedFailed
+  public init(value: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public init?(rawValue: Swift.Int32)
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Fingerprint {
+  final public let displayable: Swift.String
+  final public let scannable: Foundation.Data
+  convenience public init(iterations: Swift.Int, localIdentifier: Swift.String, localIdentity: Foundation.Data, remoteIdentifier: Swift.String, remoteIdentity: Foundation.Data) throws
+  convenience public init(iterations: Swift.Int, localIdentity: Foundation.Data, remoteIdentity: Foundation.Data) throws
+  convenience public init(iterations: Swift.Int, localIdentifier: Swift.String, localIdentityList: [Foundation.Data], remoteIdentifier: Swift.String, remoteIdentityList: [Foundation.Data]) throws
+  convenience public init(iterations: Swift.Int, localIdentityList: [Foundation.Data], remoteIdentityList: [Foundation.Data]) throws
+  public func matches(scannable data: Foundation.Data) throws -> Swift.Bool
+  public func matches(scannable fingerprint: SignalProtocol.Fingerprint) throws -> Swift.Bool
+  @objc deinit
+}
+public protocol PreKeyStore {
+  func load(preKey: Swift.UInt32) -> Foundation.Data?
+  func store(preKey: Foundation.Data, for id: Swift.UInt32) -> Swift.Bool
+  func contains(preKey: Swift.UInt32) -> Swift.Bool
+  func remove(preKey: Swift.UInt32) -> Swift.Bool
+  func destroy()
+}
+extension PreKeyStore {
+  public func destroy()
+}
+@_hasMissingDesignatedInitializers final public class Signal {
+  @objc deinit
+}
+extension Signal {
+  public static func generateIdentityKeyPair() throws -> SignalProtocol.KeyPair
+  public static func generateRegistrationId(extendedRange: Swift.Bool = false) throws -> Swift.UInt32
+  public static func generatePreKeys(start: Swift.UInt32, count: Swift.Int) throws -> [SignalProtocol.SessionPreKey]
+  public static func generate(signedPreKey: Swift.UInt32, identity: SignalProtocol.KeyPair, timestamp: Swift.UInt64) throws -> SignalProtocol.SessionSignedPreKey
+}
+final public class SignalStore {
+  final public let identityKeyStore: SignalProtocol.IdentityKeyStore
+  final public let preKeyStore: SignalProtocol.PreKeyStore
+  final public let sessionStore: SignalProtocol.SessionStore
+  final public let signedPreKeyStore: SignalProtocol.SignedPreKeyStore
+  final public let senderKeyStore: SignalProtocol.SenderKeyStore?
+  public init(identityKeyStore: SignalProtocol.IdentityKeyStore, preKeyStore: SignalProtocol.PreKeyStore, sessionStore: SignalProtocol.SessionStore, signedPreKeyStore: SignalProtocol.SignedPreKeyStore, senderKeyStore: SignalProtocol.SenderKeyStore?) throws
+  @objc deinit
+}
+final public class SignalSenderKeyName {
+  final public let groupId: Swift.String
+  final public let sender: SignalProtocol.SignalAddress
+  public init(groupId: Swift.String, sender: SignalProtocol.SignalAddress)
+  @objc deinit
+}
+extension SignalSenderKeyName : Swift.Equatable {
+  public static func == (lhs: SignalProtocol.SignalSenderKeyName, rhs: SignalProtocol.SignalSenderKeyName) -> Swift.Bool
+}
+extension SignalSenderKeyName : Swift.Hashable {
+  final public var hashValue: Swift.Int {
+    get
+  }
+  final public func hash(into hasher: inout Swift.Hasher)
+}
+public struct SessionSignedPreKey {
+  public let id: Swift.UInt32
+  public let timestamp: Swift.UInt64
+  public let signature: Foundation.Data
+  public let keyPair: SignalProtocol.KeyPair
+  public init(from data: Foundation.Data) throws
+  public func data() throws -> Foundation.Data
+}
+public struct CiphertextMessage {
+  public enum MessageType : Swift.UInt8 {
+    case signal
+    case preKey
+    case senderKey
+    case distribution
+    case unknown
+    public typealias RawValue = Swift.UInt8
+    public init?(rawValue: Swift.UInt8)
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public let type: SignalProtocol.CiphertextMessage.MessageType
+  public let message: Foundation.Data
+  public init(type: SignalProtocol.CiphertextMessage.MessageType, message: Foundation.Data)
+  public init(from data: Foundation.Data)
+  public var data: Foundation.Data {
+    get
+  }
+}
+public protocol IdentityKeyStore {
+  func identityKeyPair() -> SignalProtocol.KeyPair?
+  func localRegistrationId() -> Swift.UInt32?
+  func save(identity: Foundation.Data?, for address: SignalProtocol.SignalAddress) -> Swift.Bool
+  func isTrusted(identity: Foundation.Data, for address: SignalProtocol.SignalAddress) -> Swift.Bool?
+  func destroy()
+}
+extension IdentityKeyStore {
+  public func destroy()
+}
+public protocol SignedPreKeyStore {
+  func load(signedPreKey: Swift.UInt32) -> Foundation.Data?
+  func store(signedPreKey: Foundation.Data, for id: Swift.UInt32) -> Swift.Bool
+  func contains(signedPreKey: Swift.UInt32) -> Swift.Bool
+  func remove(signedPreKey: Swift.UInt32) -> Swift.Bool
+  func destroy()
+}
+extension SignedPreKeyStore {
+  public func destroy()
+}
+final public class SessionBuilder {
+  public init(for remoteAddress: SignalProtocol.SignalAddress, in store: SignalProtocol.SignalStore)
+  final public func process(preKeyBundle: SignalProtocol.SessionPreKeyBundle) throws
+  @objc deinit
+}
+final public class SessionCipher {
+  public init(for remoteAddress: SignalProtocol.SignalAddress, in store: SignalProtocol.SignalStore)
+  final public func encrypt(_ message: Foundation.Data) throws -> SignalProtocol.CiphertextMessage
+  final public func decrypt(data: Foundation.Data) throws -> Foundation.Data
+  final public func decrypt(message: SignalProtocol.CiphertextMessage) throws -> Foundation.Data
+  final public func decrypt(preKeySignalMessage message: Foundation.Data) throws -> Foundation.Data
+  final public func decrypt(signalMessage message: Foundation.Data) throws -> Foundation.Data
+  @objc deinit
+}
+public protocol SessionStore {
+  func loadSession(for address: SignalProtocol.SignalAddress) -> (session: Foundation.Data, userRecord: Foundation.Data?)?
+  func subDeviceSessions(for name: Swift.String) -> [Swift.Int32]?
+  func store(session: Foundation.Data, for address: SignalProtocol.SignalAddress, userRecord: Foundation.Data?) -> Swift.Bool
+  func containsSession(for address: SignalProtocol.SignalAddress) -> Swift.Bool
+  func deleteSession(for address: SignalProtocol.SignalAddress) -> Swift.Bool?
+  func deleteAllSessions(for name: Swift.String) -> Swift.Int?
+  func destroy()
+}
+extension SessionStore {
+  public func destroy()
+}
+public struct KeyPair {
+  public let publicKey: Foundation.Data
+  public let privateKey: Foundation.Data
+  public init(publicKey: Foundation.Data, privateKey: Foundation.Data)
+}
+final public class GroupSessionBuilder {
+  public init(in store: SignalProtocol.SignalStore)
+  final public func process(senderKeyDistributionMessage message: SignalProtocol.CiphertextMessage, from remoteAddress: SignalProtocol.SignalSenderKeyName) throws
+  final public func process(senderKeyDistributionMessage message: Foundation.Data, from remoteAddress: SignalProtocol.SignalSenderKeyName) throws
+  final public func createSession(for localAddress: SignalProtocol.SignalSenderKeyName) throws -> SignalProtocol.CiphertextMessage
+  @objc deinit
+}
+public struct SessionPreKeyBundle {
+  public init(registrationId: Swift.UInt32, deviceId: Swift.Int32, preKeyId: Swift.UInt32?, preKey: Foundation.Data?, signedPreKeyId: Swift.UInt32, signedPreKey: Foundation.Data, signature: Foundation.Data, identityKey: Foundation.Data)
+}
+public protocol SenderKeyStore {
+  func store(senderKey: Foundation.Data, for address: SignalProtocol.SignalSenderKeyName, userRecord: Foundation.Data?) -> Swift.Bool
+  func loadSenderKey(for address: SignalProtocol.SignalSenderKeyName) -> (senderKey: Foundation.Data, userRecord: Foundation.Data?)?
+  func destroy()
+}
+extension SenderKeyStore {
+  public func destroy()
+}
+public struct SessionPreKey {
+  public let id: Swift.UInt32
+  public let keyPair: SignalProtocol.KeyPair
+  public init(from data: Foundation.Data) throws
+  public func data() throws -> Foundation.Data
+}
+final public class SignalAddress {
+  final public let name: Swift.String
+  final public let deviceId: Swift.Int32
+  public init(name: Swift.String, deviceId: Swift.Int32)
+  @objc deinit
+}
+extension SignalAddress : Swift.Equatable {
+  public static func == (lhs: SignalProtocol.SignalAddress, rhs: SignalProtocol.SignalAddress) -> Swift.Bool
+}
+extension SignalAddress : Swift.Hashable {
+  final public var hashValue: Swift.Int {
+    get
+  }
+  final public func hash(into hasher: inout Swift.Hasher)
+}
+extension SignalProtocol.SignalError : Swift.Equatable {}
+extension SignalProtocol.SignalError : Swift.Hashable {}
+extension SignalProtocol.SignalError : Swift.RawRepresentable {}
+extension SignalProtocol.CiphertextMessage.MessageType : Swift.Equatable {}
+extension SignalProtocol.CiphertextMessage.MessageType : Swift.Hashable {}
+extension SignalProtocol.CiphertextMessage.MessageType : Swift.RawRepresentable {}

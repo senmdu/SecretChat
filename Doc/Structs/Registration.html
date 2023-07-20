@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Registration" class="dashAnchor"></a>
+    <a title="Registration Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">iZSecretChat 1.0.1 Docs</a> (66% documented)</p>
+        <p class="header-right"><a href="https://git.csez.zohocorpin.com/zohochat_mobile/ios_packages/izsecretchat"><img src="../img/gitlab.svg" alt="GitLab"/>View on GitLab</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">iZSecretChat Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        Registration Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AESEncrypt.html">AESEncrypt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretChatAPIHandler.html">SecretChatAPIHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretChatDataStore.html">SecretChatDataStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretSession.html">SecretSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VerifySafety.html">VerifySafety</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSIdentityStore.html">iZSIdentityStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSPreKeyStore.html">iZSPreKeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSSenderKeyStore.html">iZSSenderKeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSSessionStore.html">iZSSessionStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSSignedPrekeyStore.html">iZSSignedPrekeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSecretChat.html">iZSecretChat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSecretChatHelper.html">iZSecretChatHelper</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SecretChatAPIHandlerDelegate.html">SecretChatAPIHandlerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AES256Crypter.html">AES256Crypter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AES256Crypter/AES256CrypterError.html">– AES256CrypterError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AESEncryptedMessage.html">AESEncryptedMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AesKeysEncrypt.html">AesKeysEncrypt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalUser.html">LocalUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegisteredDevice.html">RegisteredDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Registration.html">Registration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RemoteSession.html">RemoteSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RemoteUser.html">RemoteUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RuntimeError.html">RuntimeError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Registration</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Registration</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>Registration</code> holds information about current user.
+It can be one of several types.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV8deviceIDs5Int32Vvp"></a>
+                    <a name="//apple_ref/swift/Property/deviceID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV8deviceIDs5Int32Vvp">deviceID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">deviceID</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV6userIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/userId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV6userIdSSSgvp">userId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV15identityKeyPair14registrationId09signedPreE6RecordAC14SignalProtocol0eF0V_s6UInt32VAG013SessionSignedjE0Vtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(identityKeyPair:registrationId:signedPreKeyRecord:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV15identityKeyPair14registrationId09signedPreE6RecordAC14SignalProtocol0eF0V_s6UInt32VAG013SessionSignedjE0Vtcfc">init(identityKeyPair:<wbr>registrationId:<wbr>signedPreKeyRecord:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">identityKeyPair</span><span class="p">:</span> <span class="kt">KeyPair</span><span class="p">,</span> <span class="nv">registrationId</span><span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="nv">signedPreKeyRecord</span><span class="p">:</span> <span class="kt">SessionSignedPreKey</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV15identityKeyPair14registrationId09signedPreE6RecordAC10Foundation4DataV06publicE0_AI07privateE0t_s6UInt32VAItKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(identityKeyPair:registrationId:signedPreKeyRecord:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV15identityKeyPair14registrationId09signedPreE6RecordAC10Foundation4DataV06publicE0_AI07privateE0t_s6UInt32VAItKcfc">init(identityKeyPair:<wbr>registrationId:<wbr>signedPreKeyRecord:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">identityKeyPair</span><span class="p">:</span> <span class="p">(</span><span class="nv">publicKey</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">privateKey</span><span class="p">:</span> <span class="kt">Data</span><span class="p">),</span> <span class="nv">registrationId</span><span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="nv">signedPreKeyRecord</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV15identityKeyPair14SignalProtocol0eF0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/identityKeyPair" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV15identityKeyPair14SignalProtocol0eF0Vvp">identityKeyPair</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">identityKeyPair</span><span class="p">:</span> <span class="kt">KeyPair</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV14registrationIds6UInt32Vvp"></a>
+                    <a name="//apple_ref/swift/Property/registrationId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV14registrationIds6UInt32Vvp">registrationId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">registrationId</span><span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV18signedPreKeyRecord14SignalProtocol013SessionSignedeF0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/signedPreKeyRecord" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV18signedPreKeyRecord14SignalProtocol013SessionSignedeF0Vvp">signedPreKeyRecord</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">signedPreKeyRecord</span><span class="p">:</span> <span class="kt">SessionSignedPreKey</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV24identityKeyPrivateBase64SSyF"></a>
+                    <a name="//apple_ref/swift/Method/identityKeyPrivateBase64()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV24identityKeyPrivateBase64SSyF">identityKeyPrivateBase64()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">identityKeyPrivateBase64</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV23identityKeyPublicBase64SSyF"></a>
+                    <a name="//apple_ref/swift/Method/identityKeyPublicBase64()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV23identityKeyPublicBase64SSyF">identityKeyPublicBase64()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">identityKeyPublicBase64</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV24signedPreKeyRecordBase64SSSgyF"></a>
+                    <a name="//apple_ref/swift/Method/signedPreKeyRecordBase64()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV24signedPreKeyRecordBase64SSSgyF">signedPreKeyRecordBase64()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">signedPreKeyRecordBase64</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV018signedPreKeyPublicF6Base64SSyF"></a>
+                    <a name="//apple_ref/swift/Method/signedPreKeyPublicKeyBase64()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV018signedPreKeyPublicF6Base64SSyF">signedPreKeyPublicKeyBase64()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">signedPreKeyPublicKeyBase64</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV14signedPreKeyIds6UInt32VyF"></a>
+                    <a name="//apple_ref/swift/Method/signedPreKeyId()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV14signedPreKeyIds6UInt32VyF">signedPreKeyId()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">signedPreKeyId</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12RegistrationV33signedPreKeyRecordSignatureBase64SSyF"></a>
+                    <a name="//apple_ref/swift/Method/signedPreKeyRecordSignatureBase64()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12RegistrationV33signedPreKeyRecordSignatureBase64SSyF">signedPreKeyRecordSignatureBase64()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">signedPreKeyRecordSignatureBase64</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.zohocorp.com" target="_blank" rel="external noopener">Zoho Corporation</a>. All rights reserved. (Last updated: 2022-07-12)</p>
+         
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

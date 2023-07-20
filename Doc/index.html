@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>iZSecretChat  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="iZSecretChat  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">iZSecretChat 1.0.1 Docs</a> (66% documented)</p>
+        <p class="header-right"><a href="https://git.csez.zohocorpin.com/zohochat_mobile/ios_packages/izsecretchat"><img src="img/gitlab.svg" alt="GitLab"/>View on GitLab</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">iZSecretChat Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+        iZSecretChat  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AESEncrypt.html">AESEncrypt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SecretChatAPIHandler.html">SecretChatAPIHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SecretChatDataStore.html">SecretChatDataStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SecretSession.html">SecretSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VerifySafety.html">VerifySafety</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/iZSIdentityStore.html">iZSIdentityStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/iZSPreKeyStore.html">iZSPreKeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/iZSSenderKeyStore.html">iZSSenderKeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/iZSSessionStore.html">iZSSessionStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/iZSSignedPrekeyStore.html">iZSSignedPrekeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/iZSecretChat.html">iZSecretChat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/iZSecretChatHelper.html">iZSecretChatHelper</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/SecretChatAPIHandlerDelegate.html">SecretChatAPIHandlerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/AES256Crypter.html">AES256Crypter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AES256Crypter/AES256CrypterError.html">– AES256CrypterError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AESEncryptedMessage.html">AESEncryptedMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AesKeysEncrypt.html">AesKeysEncrypt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LocalUser.html">LocalUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RegisteredDevice.html">RegisteredDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Registration.html">Registration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RemoteSession.html">RemoteSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RemoteUser.html">RemoteUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RuntimeError.html">RuntimeError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><a href="#installation"><img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS%20-4E4E4E.svg?colorA=28a745" alt="Platform"></a></p>
+
+<p><a href="#swift-versions-support"><img src="https://img.shields.io/badge/Swift-4.2%20%7C%205.0-lightgrey.svg?colorA=28a745&colorB=4E4E4E" alt="Swift support"></a></p>
+<h1 id='izsecretchat' class='heading'>iZSecretChat</h1>
+
+<p>iZSecretChat is a library to create a end to end encrypted messages. This library uses <a href="https://github.com/signalapp/libsignal-protocol-c">libsignal-protocol-c</a> , which is a ratcheting forward secrecy protocol that works in synchronous and asynchronous messaging
+environments.</p>
+<h2 id='aes-encryption' class='heading'>AES encryption</h2>
+
+<p>All symmetric key encryption in our app will be done via AES-256 keys in AES-GCM mode. Any 12 byte deterministic IV will be used for each encryption pass through.</p>
+<h2 id='signal-protocol' class='heading'>Signal protocol</h2>
+
+<p><a href="https://github.com/signalapp/libsignal-protocol-c">Signal protocol</a> will be used for the secure key exchange iZSecretChat. </p>
+<h2 id='chat-message-encryption' class='heading'>Chat message encryption</h2>
+
+<p>For text message encryption, a random AES-256 key generator can be used for the key material (random key for each message). Message should be encrypted using that key and the key material has to be encrypted for all available user sessions.</p>
+
+<p>Message can be encrypted and payload is formed in the following format,</p>
+<pre class="highlight plaintext"><code>base64_encoded_iv$base_64_encoded_enc_data
+</code></pre>
+<h2 id='flow-chart' class='heading'>Flow chart</h2>
+
+<p><img src="img/WorkingFlow.png" alt="Working Flow" title="Working Flow"></p>
+
+<hr>
+
+<p><a href="#requirements">Requirements</a> | <a href="#features">Features</a> | <a href="#installation">Installation</a> | <a href="#client-install-time">Client install time</a> | <a href="#building-sessions">Building sessions</a> | <a href="#encryption">Encryption</a> | <a href="#decryption">Decryption</a> | <a href="#fingerprints">Fingerprints</a> | <a href="#author">Author</a> | <a href="#license">License</a></p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<p>There is no need to initialize a global
+context or do any other setup before usage. <code><a href="Classes/iZSecretChat.html">iZSecretChat</a></code> uses
+the built-in <code>CommonCrypto</code> library for cryptographic functions. Simply:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="n">iZSecretChat</span>
+</code></pre>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>End to End encrypted messages</li>
+<li>Easy to use</li>
+<li>AES-GCM key encryption/decryption</li>
+<li>Signal Protocol encryption/decryption</li>
+<li>iOS, macOS, AppleTV, watchOS, support</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>iZSecretChat is available through <a href="https://git.csez.zohocorpin.com/zoho/zohopodspecs.git">Zoho Pods Repo</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'iZSecretChat'</span>
+</code></pre>
+<h2 id='client-install-time' class='heading'>Client install time</h2>
+
+<p>At install time, a <code><a href="Classes/iZSecretChat.html">iZSecretChat</a></code> client needs to generate its identity keys,
+registration id, and prekeys.</p>
+<pre class="highlight swift"><code><span class="n">iZSecretChat</span><span class="o">.</span><span class="nf">initiate</span><span class="p">()</span>
+
+<span class="cm">/* To Upload public identity key, public pre keys and public signed pre key to the server implement `SecretChatAPIHandlerDelegate` protocol  */</span>
+<span class="n">iZSecretChat</span><span class="o">.</span><span class="nf">addApiHandler</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span>
+</code></pre>
+
+<p>RegistrationId, identityKeyPair, prekeys, signedPrekey will be stored in local database.</p>
+<h2 id='building-sessions' class='heading'>Building sessions</h2>
+<h3 id='building-a-session-with-a-downloaded-pre-key-bundle' class='heading'>Building a session with a downloaded pre key bundle</h3>
+
+<p>iZSecretChat needs bundle to establish session. Once pre key bundle downloaded from the server it will get processed and session will be establish for recipient with <code>SignalProtocol</code>. Additionaly session will be stored in local database. </p>
+<pre class="highlight swift"><code><span class="cm">/* Requesting bundle from server  */</span>
+<span class="n">iZSecretChat</span><span class="o">.</span><span class="nf">requestBundle</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">recipientIds</span><span class="p">)</span>
+
+<span class="cm">/* Load sessions from local for particular user id  */</span>
+<span class="k">let</span> <span class="nv">sessions</span> <span class="o">=</span> <span class="kt">RemoteSession</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">userId</span><span class="p">)</span>
+
+</code></pre>
+<h2 id='encryption' class='heading'>Encryption</h2>
+<h3 id='aes256key-generation' class='heading'>AES256Key Generation</h3>
+
+<p>Symmetric key encryption in <code><a href="Classes/iZSecretChat.html">iZSecretChat</a></code> will be done via AES-256 keys in AES-GCM mode. Random 12 byte deterministic IV will be used for each encryption pass through. </p>
+<pre class="highlight swift"><code><span class="cm">/* To Generate AESKey  */</span>
+<span class="kt">AES256Crypter</span><span class="o">.</span><span class="nf">generateAes256</span><span class="p">()</span>
+</code></pre>
+<h3 id='encrypting-messages-with-generated-aeskey' class='heading'>Encrypting messages with generated AESKey</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">aesEncrypt</span> <span class="o">=</span> <span class="kt">AESEncrypt</span><span class="p">(</span><span class="nv">aesKey</span><span class="p">:</span> <span class="n">aesKey</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">encrypted</span>  <span class="o">=</span> <span class="n">aesEncrypt</span><span class="o">.</span><span class="nf">perform</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="n">msgTextEnc</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">encrypted</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+</code></pre>
+<h3 id='encrypting-aes-key-with-signal-protocol' class='heading'>Encrypting AES key with signal protocol</h3>
+
+<p>AES key is now ready to encrypt with established session.</p>
+<pre class="highlight swift"><code><span class="cm">/* Retrive single session with userId and deviceID */</span>
+<span class="k">let</span> <span class="nv">session</span> <span class="o">=</span> <span class="kt">RemoteSession</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span><span class="nv">userId</span><span class="p">:</span> <span class="n">userId</span><span class="p">,</span> <span class="nv">deviceID</span><span class="p">:</span> <span class="n">deviceId</span><span class="p">)</span>
+
+<span class="cm">/* Retrive all available sessions for userId */</span>
+<span class="k">let</span> <span class="nv">sessions</span> <span class="o">=</span> <span class="kt">RemoteSession</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">userId</span><span class="p">)</span>
+
+<span class="cm">/* Retrive all available sessions for multiple userIds */</span>
+<span class="k">let</span> <span class="nv">sessions</span> <span class="o">=</span> <span class="kt">RemoteSession</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">userIds</span><span class="p">)</span>
+
+<span class="cm">/* Encrypting aes key with session */</span>
+<span class="kt">SecretSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">signalEncrypt</span><span class="p">(</span><span class="nv">session</span><span class="p">:</span> <span class="n">session</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="n">msgData</span><span class="p">)</span>
+</code></pre>
+<h2 id='decryption' class='heading'>Decryption</h2>
+<h3 id='check-message-sender-have-session' class='heading'>Check message sender have session</h3>
+<pre class="highlight swift"><code><span class="kt">SecretSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">hasSession</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="n">userId</span><span class="p">,</span> <span class="nv">deviceId</span><span class="p">:</span> <span class="n">deviceId</span><span class="p">)</span>
+</code></pre>
+<h3 id='decrypting-in-an-established-session' class='heading'>Decrypting in an established session</h3>
+
+<p>Once checked sender have session, We can start decrypt the encrypted aes key.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">aesKey</span> <span class="o">=</span> <span class="kt">SecretSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">signalDecrypt</span><span class="p">(</span><span class="n">senderUserId</span><span class="p">,</span> <span class="nv">deviceId</span><span class="p">:</span> <span class="n">senderDeviceId</span><span class="p">,</span> <span class="nv">encAesKey</span><span class="p">:</span> <span class="n">encKey</span><span class="p">)</span>
+</code></pre>
+<h3 id='check-message-sender-have-session' class='heading'>Check message sender have session</h3>
+<pre class="highlight swift"><code><span class="kt">SecretSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">hasSession</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="n">userId</span><span class="p">,</span> <span class="nv">deviceId</span><span class="p">:</span> <span class="n">deviceId</span><span class="p">)</span>
+</code></pre>
+<h3 id='decrypting-aes-encrypted-message-with-aeskey' class='heading'>Decrypting AES Encrypted message with AESKey</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">aes</span> <span class="o">=</span> <span class="kt">AESEncryptedMessage</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="n">encMsgText</span><span class="p">,</span> <span class="nv">aesKey</span><span class="p">:</span> <span class="n">aesKey</span><span class="p">)</span>
+<span class="k">if</span> <span class="k">let</span> <span class="nv">decrypted</span> <span class="o">=</span>  <span class="n">aes</span><span class="o">.</span><span class="nf">decrypt</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">decrypted</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">))</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='fingerprints' class='heading'>Fingerprints</h2>
+
+<p>It can be beneficial to compare identity fingerprints to protect against man-in-the-middle attacks.</p>
+<pre class="highlight swift"><code><span class="cm">/* Create fingerprint */</span>
+<span class="k">let</span> <span class="nv">verifySecreteChat</span> <span class="o">=</span> <span class="kt">VerifySafety</span><span class="p">(</span><span class="nv">localIdentity</span><span class="p">:</span> <span class="n">localPublicKeys</span><span class="p">,</span> <span class="nv">remoteSessions</span><span class="p">:</span> <span class="n">remoteSessions</span><span class="p">)</span>
+
+<span class="cm">/* Obtain scanned data from other device */</span>
+<span class="cm">/* Show safety */</span>
+<span class="n">verifySecreteChat</span><span class="p">?</span><span class="o">.</span><span class="nf">getVerificationDisplayText</span><span class="p">()</span>
+
+<span class="cm">/* Compare scanned fingerprint */</span>
+<span class="k">let</span> <span class="nv">equal</span> <span class="o">=</span> <span class="n">verifySecreteChat</span><span class="p">?</span><span class="o">.</span><span class="nf">verify</span><span class="p">(</span><span class="nv">code</span><span class="p">:</span> <span class="n">code</span><span class="p">)</span>
+</code></pre>
+
+<p>It&rsquo;s also possible to create fingerprints from several local and remote identities, e.g. in a group conversation setting.</p>
+<h1 id='legal-things' class='heading'>Legal things</h1>
+<h2 id='cryptography-notice' class='heading'>Cryptography Notice</h2>
+
+<p>This distribution includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encryption software.
+BEFORE using any encryption software, please check your country&rsquo;s laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
+See <a href="http://www.wassenaar.org/">http://www.wassenaar.org/</a> for more information.</p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>Senthil Kumar R, <a href="mailto:senthil.rp@zohocorp.com">senthil.rp@zohocorp.com</a> for <a href="https://www.zohocorp.com">Zoho Corporation</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p><code><a href="Classes/iZSecretChat.html">iZSecretChat</a></code> is available under the MIT license. See the LICENSE file for more info.</p>
+
+<p><code>libsignal-protocol-c</code> is copyright (2015-2016) of Open Whisper Systems, and licensed under the GPLv3.</p>
+
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.zohocorp.com" target="_blank" rel="external noopener">Zoho Corporation</a>. All rights reserved. (Last updated: 2022-07-12)</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

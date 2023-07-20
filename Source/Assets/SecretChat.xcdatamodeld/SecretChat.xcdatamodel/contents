@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AesKeys" representedClassName="AesKeys" syncable="YES" codeGenerationType="class">
+        <attribute name="chatId" optional="YES" attributeType="String"/>
+        <attribute name="key" optional="YES" attributeType="Binary"/>
+        <attribute name="messageId" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RemoteSessions" representedClassName="RemoteSessions" syncable="YES" codeGenerationType="class">
+        <attribute name="deviceId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="identityKey" optional="YES" attributeType="Binary"/>
+        <attribute name="registrationID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="session" optional="YES" attributeType="Binary"/>
+        <attribute name="userId" optional="YES" attributeType="String"/>
+        <attribute name="userRecord" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="SignalPreKeys" representedClassName="SignalPreKeys" syncable="YES" codeGenerationType="class">
+        <attribute name="key" optional="YES" attributeType="Binary"/>
+        <attribute name="preKeyId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+</model>

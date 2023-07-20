@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RemoteSession Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/RemoteSession" class="dashAnchor"></a>
+    <a title="RemoteSession Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">iZSecretChat 1.0.1 Docs</a> (66% documented)</p>
+        <p class="header-right"><a href="https://git.csez.zohocorpin.com/zohochat_mobile/ios_packages/izsecretchat"><img src="../img/gitlab.svg" alt="GitLab"/>View on GitLab</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">iZSecretChat Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        RemoteSession Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AESEncrypt.html">AESEncrypt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretChatAPIHandler.html">SecretChatAPIHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretChatDataStore.html">SecretChatDataStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretSession.html">SecretSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VerifySafety.html">VerifySafety</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSIdentityStore.html">iZSIdentityStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSPreKeyStore.html">iZSPreKeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSSenderKeyStore.html">iZSSenderKeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSSessionStore.html">iZSSessionStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSSignedPrekeyStore.html">iZSSignedPrekeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSecretChat.html">iZSecretChat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSecretChatHelper.html">iZSecretChatHelper</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SecretChatAPIHandlerDelegate.html">SecretChatAPIHandlerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AES256Crypter.html">AES256Crypter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AES256Crypter/AES256CrypterError.html">– AES256CrypterError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AESEncryptedMessage.html">AESEncryptedMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AesKeysEncrypt.html">AesKeysEncrypt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalUser.html">LocalUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegisteredDevice.html">RegisteredDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Registration.html">Registration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RemoteSession.html">RemoteSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RemoteUser.html">RemoteUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RuntimeError.html">RuntimeError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RemoteSession</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RemoteSession</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>RemoteSession</code> is a struct that holds information of remote user session.
+It can be one of several types.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV8deviceId14registrationID04userF013sessionRecord0iK011identityKeyACs5Int32V_s6UInt32VSS10Foundation4DataVSgA2Qtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(deviceId:registrationID:userId:sessionRecord:userRecord:identityKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV8deviceId14registrationID04userF013sessionRecord0iK011identityKeyACs5Int32V_s6UInt32VSS10Foundation4DataVSgA2Qtcfc">init(deviceId:<wbr>registrationID:<wbr>userId:<wbr>sessionRecord:<wbr>userRecord:<wbr>identityKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="nf">init</span><span class="p">(</span><span class="nv">deviceId</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">registrationID</span><span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">sessionRecord</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span> <span class="nv">userRecord</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span> <span class="nv">identityKey</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV11identityKey10Foundation4DataVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/identityKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV11identityKey10Foundation4DataVSgvp">identityKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">identityKey</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV10userRecord10Foundation4DataVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/userRecord" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV10userRecord10Foundation4DataVSgvp">userRecord</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">userRecord</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV13sessionRecord10Foundation4DataVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sessionRecord" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV13sessionRecord10Foundation4DataVSgvp">sessionRecord</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sessionRecord</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV15protocolAddress14SignalProtocol0gF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/protocolAddress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV15protocolAddress14SignalProtocol0gF0Cvp">protocolAddress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">protocolAddress</span><span class="p">:</span> <span class="kt">SignalAddress</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV6userIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/userId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV6userIdSSvp">userId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV14registrationIDs6UInt32Vvp"></a>
+                    <a name="//apple_ref/swift/Property/registrationID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV14registrationIDs6UInt32Vvp">registrationID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">registrationID</span><span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV10identifierSSvp"></a>
+                    <a name="//apple_ref/swift/Property/identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV10identifierSSvp">identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV3get3for8sessionsySS_ySayACGctFZ"></a>
+                    <a name="//apple_ref/swift/Method/get(for:sessions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV3get3for8sessionsySS_ySayACGctFZ">get(for:<wbr>sessions:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="k">for</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">sessions</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">RemoteSession</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV3get6userId8deviceIDACSgSS_s5Int32VtFZ"></a>
+                    <a name="//apple_ref/swift/Method/get(userId:deviceID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV3get6userId8deviceIDACSgSS_s5Int32VtFZ">get(userId:<wbr>deviceID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">deviceID</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RemoteSession</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV3get3forSayACGSaySSG_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/get(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV3get3forSayACGSaySSG_tFZ">get(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="k">for</span> <span class="nv">userId</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">RemoteSession</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV06getAllC8SessionsSayACGyFZ"></a>
+                    <a name="//apple_ref/swift/Method/getAllRemoteSessions()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV06getAllC8SessionsSayACGyFZ">getAllRemoteSessions()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getAllRemoteSessions</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">RemoteSession</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV6remove6userId06deviceG0ySS_s5Int32VtFZ"></a>
+                    <a name="//apple_ref/swift/Method/remove(userId:deviceId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV6remove6userId06deviceG0ySS_s5Int32VtFZ">remove(userId:<wbr>deviceId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">deviceId</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat13RemoteSessionV20getBundleIdentifiers3forSaySSGSS_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getBundleIdentifiers(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat13RemoteSessionV20getBundleIdentifiers3forSaySSGSS_tFZ">getBundleIdentifiers(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getBundleIdentifiers</span><span class="p">(</span><span class="k">for</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.zohocorp.com" target="_blank" rel="external noopener">Zoho Corporation</a>. All rights reserved. (Last updated: 2022-07-12)</p>
+         
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,600 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 18,
+      "symbol": "Registration.deviceID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 21,
+      "symbol": "Registration.userId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 24,
+      "symbol": "Registration.init(identityKeyPair:registrationId:signedPreKeyRecord:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 31,
+      "symbol": "Registration.init(identityKeyPair:registrationId:signedPreKeyRecord:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 37,
+      "symbol": "Registration.identityKeyPair",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 38,
+      "symbol": "Registration.registrationId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 39,
+      "symbol": "Registration.signedPreKeyRecord",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 42,
+      "symbol": "Registration.identityKeyPrivateBase64()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 46,
+      "symbol": "Registration.identityKeyPublicBase64()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 51,
+      "symbol": "Registration.signedPreKeyRecordBase64()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 56,
+      "symbol": "Registration.signedPreKeyPublicKeyBase64()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 60,
+      "symbol": "Registration.signedPreKeyId()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/Registration.swift",
+      "line": 64,
+      "symbol": "Registration.signedPreKeyRecordSignatureBase64()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 45,
+      "symbol": "SecretChatDataStore.create(remoteUser:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 72,
+      "symbol": "SecretChatDataStore.updateRemoteSession(for:sessionRecord:userRecord:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 97,
+      "symbol": "SecretChatDataStore.getUserIdentifiers(userId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 109,
+      "symbol": "SecretChatDataStore.getRemoteSession(address:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 127,
+      "symbol": "SecretChatDataStore.getRemoteSessions(userId:sessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 140,
+      "symbol": "SecretChatDataStore.getRemoteSessions(userId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 151,
+      "symbol": "SecretChatDataStore.getAllRemoteSessions()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 161,
+      "symbol": "SecretChatDataStore.getRemoteSessions(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 173,
+      "symbol": "SecretChatDataStore.removeSession(address:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession+DataStore.swift",
+      "line": 187,
+      "symbol": "SecretChatDataStore.removeSessions()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 14,
+      "symbol": "RemoteSession.init(deviceId:registrationID:userId:sessionRecord:userRecord:identityKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 23,
+      "symbol": "RemoteSession.identityKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 24,
+      "symbol": "RemoteSession.userRecord",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 25,
+      "symbol": "RemoteSession.sessionRecord",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 26,
+      "symbol": "RemoteSession.protocolAddress",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 27,
+      "symbol": "RemoteSession.userId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 28,
+      "symbol": "RemoteSession.registrationID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 30,
+      "symbol": "RemoteSession.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 33,
+      "symbol": "RemoteSession.get(for:sessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 36,
+      "symbol": "RemoteSession.get(userId:deviceID:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 40,
+      "symbol": "RemoteSession.get(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 43,
+      "symbol": "RemoteSession.getAllRemoteSessions()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 46,
+      "symbol": "RemoteSession.remove(userId:deviceId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/RemoteSession.swift",
+      "line": 50,
+      "symbol": "RemoteSession.getBundleIdentifiers(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 15,
+      "symbol": "SecretChatAPIHandlerDelegate.sessionHandling(url:params:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 16,
+      "symbol": "SecretChatAPIHandlerDelegate.sessionAdded(userId:deviceId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 25,
+      "symbol": "SecretChatAPIHandler.requestSessionUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 26,
+      "symbol": "SecretChatAPIHandler.requestBundleUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 27,
+      "symbol": "SecretChatAPIHandler.answertSessionUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 28,
+      "symbol": "SecretChatAPIHandler.pendingSessionUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 29,
+      "symbol": "SecretChatAPIHandler.registerUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 30,
+      "symbol": "SecretChatAPIHandler.keysUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 31,
+      "symbol": "SecretChatAPIHandler.deregisterUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 32,
+      "symbol": "SecretChatAPIHandler.registeredDevicesUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 33,
+      "symbol": "SecretChatAPIHandler.syncSessionUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 35,
+      "symbol": "SecretChatAPIHandler.dispatchQueue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 36,
+      "symbol": "SecretChatAPIHandler.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 40,
+      "symbol": "SecretChatAPIHandler.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 43,
+      "symbol": "SecretChatAPIHandler.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 45,
+      "symbol": "SecretChatAPIHandler.sessionNotify(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 55,
+      "symbol": "SecretChatAPIHandler.register(sendPrekeys:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 76,
+      "symbol": "SecretChatAPIHandler.deRegister(deviceId:regId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 84,
+      "symbol": "SecretChatAPIHandler.deRegisterCurrentDevice()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 88,
+      "symbol": "SecretChatAPIHandler.deRegisterAllDevices(_:exceptCurrentDevice:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 96,
+      "symbol": "SecretChatAPIHandler.getRegisteredDevices()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 119,
+      "symbol": "SecretChatAPIHandler.sendPreKeys()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 138,
+      "symbol": "SecretChatAPIHandler.proccessBundle(_:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 155,
+      "symbol": "SecretChatAPIHandler.requestBundle(for:excludeIDs:block:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 161,
+      "symbol": "SecretChatAPIHandler.requestSession(for:chatId:block:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 168,
+      "symbol": "SecretChatAPIHandler.answerSession(for:chatId:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 174,
+      "symbol": "SecretChatAPIHandler.sessionRequestRecieved(intiator:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatAPIHandler.swift",
+      "line": 190,
+      "symbol": "SecretChatAPIHandler.sessionAnswerRecieved(intiator:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatDataStore.swift",
+      "line": 18,
+      "symbol": "SecretChatDataStore.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatDataStore.swift",
+      "line": 20,
+      "symbol": "SecretChatDataStore.localUser",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatDataStore.swift",
+      "line": 25,
+      "symbol": "SecretChatDataStore.intiate(sharedContainerUrl:mainThread:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatDataStore.swift",
+      "line": 44,
+      "symbol": "SecretChatDataStore.clearSession()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatDataStore.swift",
+      "line": 61,
+      "symbol": "SecretChatDataStore.context",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretChatDataStore.swift",
+      "line": 65,
+      "symbol": "SecretChatDataStore.newBackgroundContext()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SecretSession.swift",
+      "line": 47,
+      "symbol": "SecretSession.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SignalPreKeys+DataStore.swift",
+      "line": 34,
+      "symbol": "SecretChatDataStore.getPreKeys()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SignalPreKeys+DataStore.swift",
+      "line": 44,
+      "symbol": "SecretChatDataStore.save(preKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/SignalPreKeys+DataStore.swift",
+      "line": 63,
+      "symbol": "SecretChatDataStore.removePreKeys()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/VerifySafety.swift",
+      "line": 17,
+      "symbol": "VerifySafety.remoteSession",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/VerifySafety.swift",
+      "line": 18,
+      "symbol": "VerifySafety.localIdentity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/VerifySafety.swift",
+      "line": 19,
+      "symbol": "VerifySafety.fingerPrint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/VerifySafety.swift",
+      "line": 20,
+      "symbol": "VerifySafety.init(localIdentity:remoteSessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/VerifySafety.swift",
+      "line": 27,
+      "symbol": "VerifySafety.loadVerify()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/VerifySafety.swift",
+      "line": 45,
+      "symbol": "VerifySafety.getVerificationDisplayText()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/VerifySafety.swift",
+      "line": 48,
+      "symbol": "VerifySafety.getScanableCode()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/VerifySafety.swift",
+      "line": 54,
+      "symbol": "VerifySafety.verify(code:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/iZSProtocolStore.swift",
+      "line": 362,
+      "symbol": "iZSSenderKeyStore.keys",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Niki/Documents/Work/Pods/izsecretchat/Source/Classes/iZSecretChatHelper.swift",
+      "line": 37,
+      "symbol": "iZSecretChatHelper.ZCDispatchOnMainThread(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/Niki/Documents/Work/Pods/izsecretchat"
+}

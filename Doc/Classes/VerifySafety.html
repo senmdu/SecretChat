@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VerifySafety Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/VerifySafety" class="dashAnchor"></a>
+    <a title="VerifySafety Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">iZSecretChat 1.0.1 Docs</a> (66% documented)</p>
+        <p class="header-right"><a href="https://git.csez.zohocorpin.com/zohochat_mobile/ios_packages/izsecretchat"><img src="../img/gitlab.svg" alt="GitLab"/>View on GitLab</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">iZSecretChat Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        VerifySafety Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AESEncrypt.html">AESEncrypt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretChatAPIHandler.html">SecretChatAPIHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretChatDataStore.html">SecretChatDataStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretSession.html">SecretSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VerifySafety.html">VerifySafety</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSIdentityStore.html">iZSIdentityStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSPreKeyStore.html">iZSPreKeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSSenderKeyStore.html">iZSSenderKeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSSessionStore.html">iZSSessionStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSSignedPrekeyStore.html">iZSSignedPrekeyStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSecretChat.html">iZSecretChat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/iZSecretChatHelper.html">iZSecretChatHelper</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SecretChatAPIHandlerDelegate.html">SecretChatAPIHandlerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AES256Crypter.html">AES256Crypter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AES256Crypter/AES256CrypterError.html">– AES256CrypterError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AESEncryptedMessage.html">AESEncryptedMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AesKeysEncrypt.html">AesKeysEncrypt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalUser.html">LocalUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegisteredDevice.html">RegisteredDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Registration.html">Registration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RemoteSession.html">RemoteSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RemoteUser.html">RemoteUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RuntimeError.html">RuntimeError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>VerifySafety</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">VerifySafety</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>VerifySafety</code> can be used to compare identity keys across devices.
+A VerifySafety consists of a human readable string of numbers and
+a data that can be transmitted to another device (e.g. through a QR Code).</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12VerifySafetyC13remoteSessionSayAA06RemoteF0VGvp"></a>
+                    <a name="//apple_ref/swift/Property/remoteSession" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12VerifySafetyC13remoteSessionSayAA06RemoteF0VGvp">remoteSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">remoteSession</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RemoteSession.html">RemoteSession</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12VerifySafetyC13localIdentitySay10Foundation4DataVGvp"></a>
+                    <a name="//apple_ref/swift/Property/localIdentity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12VerifySafetyC13localIdentitySay10Foundation4DataVGvp">localIdentity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">localIdentity</span><span class="p">:</span> <span class="p">[</span><span class="kt">Data</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12VerifySafetyC11fingerPrint14SignalProtocol11FingerprintCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fingerPrint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12VerifySafetyC11fingerPrint14SignalProtocol11FingerprintCSgvp">fingerPrint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fingerPrint</span><span class="p">:</span> <span class="kt">Fingerprint</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12VerifySafetyC13localIdentity14remoteSessionsACSay10Foundation4DataVG_SayAA13RemoteSessionVGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(localIdentity:remoteSessions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12VerifySafetyC13localIdentity14remoteSessionsACSay10Foundation4DataVG_SayAA13RemoteSessionVGtcfc">init(localIdentity:<wbr>remoteSessions:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">localIdentity</span><span class="p">:</span> <span class="p">[</span><span class="kt">Data</span><span class="p">],</span> <span class="nv">remoteSessions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RemoteSession.html">RemoteSession</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12VerifySafetyC04loadC0ACyF"></a>
+                    <a name="//apple_ref/swift/Method/loadVerify()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12VerifySafetyC04loadC0ACyF">loadVerify()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadVerify</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">VerifySafety</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12VerifySafetyC26getVerificationDisplayTextSSSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getVerificationDisplayText()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12VerifySafetyC26getVerificationDisplayTextSSSgyF">getVerificationDisplayText()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getVerificationDisplayText</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12VerifySafetyC15getScanableCodeSSSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getScanableCode()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12VerifySafetyC15getScanableCodeSSSgyF">getScanableCode()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getScanableCode</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iZSecretChat12VerifySafetyC6verify4codeSbSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/verify(code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iZSecretChat12VerifySafetyC6verify4codeSbSS_tF">verify(code:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">verify</span><span class="p">(</span><span class="nv">code</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.zohocorp.com" target="_blank" rel="external noopener">Zoho Corporation</a>. All rights reserved. (Last updated: 2022-07-12)</p>
+         
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
