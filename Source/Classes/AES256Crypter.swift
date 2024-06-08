@@ -3,8 +3,6 @@
 //  iZSecretChat
 //
 //  Created by Senthil Kumar on 17/03/22.
-//  Copyright © 2022 Zoho Corporation. All rights reserved.
-//
 
 import CryptoSwift
 import Foundation
